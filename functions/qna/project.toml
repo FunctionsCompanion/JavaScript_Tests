@@ -1,0 +1,9 @@
+[_]
+schema-version = "0.2"
+
+[com.salesforce]
+schema-version = "0.1"
+id = "qna"
+description = "A question and answer bot implemented as a Salesforce Function"
+type = "function"
+salesforce-api-version = "54.0"

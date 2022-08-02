@@ -1,0 +1,52 @@
+{
+  "name": "sentiment-function",
+  "version": "0.0.1",
+  "type": "module",
+  "author": "TODO",
+  "description": "TODO",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "repository": {
+    "type": "git"
+  },
+  "engines": {
+    "node": "^16.9"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "3.0.0",
+    "sf-fc-logger": "^1.2.6",
+    "vega-embed": "^6.17.0"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js --config .eslintrc",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^6.8.0",
+    "mocha": "^8.4.0",
+    "sinon": "^10.0.0",
+    "@tensorflow/tfjs-node": "3.0.0",
+    "argparse": "^1.0.10",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "~6.23.0",
+    "babel-polyfill": "~6.26.0",
+    "babel-preset-env": "~1.6.1",
+    "clang-format": "~1.2.2",
+    "cross-env": "^5.1.6",
+    "extract-zip": "^1.6.7",
+    "http-server": "^0.12.3",
+    "parcel-bundler": "~1.12.5",
+    "shelljs": "^0.8.3",
+    "tmp": "^0.0.33",
+    "yalc": "~1.0.0-pre.50"
+  },
+  "resolutions": {
+    "is-svg": "4.3.1",
+    "node-fetch": "2.6.1",
+    "vega": "5.17.3",
+    "glob-parent": "5.1.2",
+    "postcss": "8.2.10"
+  }
+}

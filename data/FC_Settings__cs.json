@@ -1,0 +1,13 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "FC_Settings__c",
+                "referenceId": "FC_Settings__cRef1"
+            },
+            "FC_Connections__c": "https://app.lastmileops.ai/connections",
+            "FC_Dashboard__c": "https://app.lastmileops.ai/visualization/",
+            "FC_Functions__c": "https://app.lastmileops.ai/salesforce-functions/"
+        }
+    ]
+}
