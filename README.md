@@ -18,18 +18,18 @@ Once Functions Companion is installed in your org, you can deploy this project b
 Once the Project is deployed, before you run any tests, update the invocation test scripts with the scratch org username used for anonomyous Apex invocation.
 
 ### Test Scripts
-The table below includes the list of available test scripts, the functions they run, and how they are invoked. Note: As of 8/1/22 the qna function does not build properely and all test will fail.
+The table below includes the list of available test scripts, the functions they run, and how they are invoked.
 
 | Test | QnA | Sentiment | Status |
 |------|-----|-----------|--------|
-|[runQnaSync.sh](runQnaSync.sh)        |Sync| | QnA Tests Fail |
-|[runQnaAsync.sh](runQnaAsync.sh)        |Async| | QnA Tests Fail |
-|[runQnaSyncAndAsync.sh](runQnaSyncAndAsync.sh)       |Sync and Async| | QnA Tests Fail |
+|[runQnaSync.sh](runQnaSync.sh)        |Sync| | All Tests Pass |
+|[runQnaAsync.sh](runQnaAsync.sh)        |Async| | All Tests Pass |
+|[runQnaSyncAndAsync.sh](runQnaSyncAndAsync.sh)       |Sync and Async| | All Tests Pass |
 |[runSentimentSync.sh](runSentimentSync.sh)        | |Sync| All Tests Pass |
 |[runSentimentAsync.sh](runSentimentAsync.sh)        | |Async| All Tests Pass |
 |[runSentimentSyncAndAsync.sh](runSentimentSyncAndAsync.sh)       ||Sync and Async| All Tests Pass |
-|[runBothSync.sh](runBothSync.sh)        |Sync|Sync| QnA Tests Fail |
-|[runBothAsync.sh](runBothAsync.sh)       |Async|Async| QnA Tests Fail |
-|[runAll.sh](runAllFC.sh)       |Sync and Async|Sync and Async| QnA Tests Fail |
+|[runBothSync.sh](runBothSync.sh)        |Sync|Sync| All Tests Pass |
+|[runBothAsync.sh](runBothAsync.sh)       |Async|Async| All Tests Pass |
+|[runAll.sh](runAllFC.sh)       |Sync and Async|Sync and Async| All Tests Pass |
 
 Each script asks for an itteration count so performance and capacity tests can be performed. The QnA function is very memory intensive and will consume more than 3GB of memory, which can be used to veryify error logging of Functions Companion.
