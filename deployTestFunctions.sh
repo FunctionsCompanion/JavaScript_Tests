@@ -1,6 +1,6 @@
 #!/bin/bash
 echo 'Enter a Compute Environment name, this will be used to name the functions environment.'
-echo -n 'Envrionment Name:'
+echo -n 'Envrionment Name: '
 read envname
 echo 'Enter the username for the target org you wish to set up for testing.'
 echo -n 'username:'

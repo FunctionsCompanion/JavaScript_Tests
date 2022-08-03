@@ -24,7 +24,8 @@
   },
   "dependencies": {
     "@tensorflow-models/qna": "^1.0.1",
-    "@tensorflow/tfjs-node": "^3.9.0",
+    "@tensorflow/tfjs-node": "^3.19.0",
+    "qna": "^1.0.1",
     "sf-fc-logger": "^1.2.6"
   }
 }
