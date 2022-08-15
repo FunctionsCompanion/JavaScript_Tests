@@ -117,3 +117,5 @@ dist
 
 # Random
 .idea/
+temp/
+data/FC_Settings__cs.json

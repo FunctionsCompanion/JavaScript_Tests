@@ -4,6 +4,17 @@ echo 'Please provide the username for the target org you wish to install Functio
 echo -n 'username:'
 read username
 
+export FC_ORG_ID=`sf env list --all | grep test-qvy2gta0aqem@example.com | awk '{print $4}'`
+
+if [ $# -eq 1 ] && [ "$1" == "test" ]
+then
+  export FC_HOST="http://localhost:3000"
+else
+  export FC_HOST="https://app.lastmileops.ai"
+fi
+
+envsubst < ./data/FC_Settings__cs.tmpl > ./data/FC_Settings__cs.json
+
 # Install the Functions Companion Package in the org
 echo 'Installing Functions Companion'
 echo 'sfdx force:package:install --wait 10 --package 04t8c000001AHeq -u' ${username}
@@ -14,15 +25,8 @@ echo 'Be sure to update with a valide API key after you create your Connected Ap
 echo ''
 echo 'To uninstall this package go to the "Installed Packages" web interface in your Salesforce org.'
 
-if [ $# -eq 1 ]
-then
-  echo === INSTALLING $1 ===
-  echo 'sfdx force:data:tree:import -p ./data/FC_Settings__c-plan-$1.json -u' ${username}
-  sfdx force:data:tree:import -p ./data/FC_Settings__c-plan-$1.json -u "${username}"
-else
-  echo 'sfdx force:data:tree:import -p ./data/FC_Settings__c-plan.json -u' ${username}
-  sfdx force:data:tree:import -p ./data/FC_Settings__c-plan.json -u "${username}"
-fi
+echo 'sfdx force:data:tree:import -p ./data/FC_Settings__cs-plan.json -u' ${username}
+sfdx force:data:tree:import -p ./data/FC_Settings__cs-plan.json -u "${username}"
 
 echo 'sfdx force:data:tree:import -p ./data/fcConfig__c-plan.json -u' ${username}
 sfdx force:data:tree:import -p ./data/fcConfig__c-plan.json -u "${username}"
