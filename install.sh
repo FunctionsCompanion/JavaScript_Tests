@@ -4,7 +4,7 @@ echo 'Please provide the username for the target org you wish to install Functio
 echo -n 'username:'
 read username
 
-export FC_ORG_ID=`sf env list --all | grep test-qvy2gta0aqem@example.com | awk '{print $4}'`
+export FC_ORG_ID=`sf env list --all | grep ${username} | awk '{print $4}'`
 
 if [ $# -eq 1 ] && [ "$1" == "test" ]
 then
