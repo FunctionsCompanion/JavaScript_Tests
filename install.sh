@@ -4,6 +4,7 @@ echo 'Please provide the username for the target org you wish to install Functio
 echo -n 'username:'
 read username
 
+sf login functions # Need to login to functions to get the orgid...
 export FC_ORG_ID=`sf env list --all | grep ${username} | awk '{print $4}'`
 
 if [ $# -eq 1 ] && [ "$1" == "test" ]
