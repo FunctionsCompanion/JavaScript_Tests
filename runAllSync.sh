@@ -7,10 +7,10 @@ remain=50
 rm *.log
 while [ $c -le $jobs ]; do 
     #sleep 1
-    sfdx force:apex:execute -f test_apex/runQnaSync.apex -u test-xvhrq0xabalz@example.com  >> outSyncQna.log &
+    sfdx force:apex:execute -f test_apex/runQnaSync.apex -u test-uet4cvemcwup@example.com  >> outSyncQna.log &
     sleep 1
     #sleep 1
-    sfdx force:apex:execute -f test_apex/runSentimentSync.apex -u test-xvhrq0xabalz@example.com >> outSyncClass.log &
+    sfdx force:apex:execute -f test_apex/runSentimentSync.apex -u test-uet4cvemcwup@example.com >> outSyncClass.log &
     sleep 1
     echo 'Another 2 Sync runs that queue function invocations.' $c 'out of' $jobs 'batches started.' 
     c=$(($c+1))
