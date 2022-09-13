@@ -40,6 +40,6 @@
   },
   "dependencies": {
     "@tensorflow/tfjs-node": "^3.19.0",
-    "sf-fc-logger": "1.2.6"
+    "sf-fc-logger": "1.2.8"
   }
 }
