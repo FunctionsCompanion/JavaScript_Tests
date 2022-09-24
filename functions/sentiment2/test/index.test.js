@@ -4,7 +4,7 @@ import createSandbox from 'sinon/lib/sinon/create-sandbox.js';
 import execute from '../index.js'
 
 /**
- * Qna unit tests.
+ * Sentiment unit tests.
  */
 
 describe('Unit Tests', () => {
@@ -56,7 +56,7 @@ describe('Unit Tests', () => {
         sandbox.restore();
     });
 
-    it('Invoke Qna', async () => {
+    it('Invoke Sentiment', async () => {
         const results = await execute({ data: {} }, mockContext, mockLogger);
 
         expect(mockContext.org.dataApi.query.callCount).to.be.eql(1);

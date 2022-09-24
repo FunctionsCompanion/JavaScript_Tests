@@ -1,4 +1,4 @@
-public with sharing class GeneratePDFCallbackCls implements functions.FunctionCallback {
+public with sharing class GeneratePDFCallbackCls implements functions.FunctionCallback, Callable {
     String fnName;
         Integer execTimes;
         Id execRequestId;
@@ -70,4 +70,19 @@ public with sharing class GeneratePDFCallbackCls implements functions.FunctionCa
             }
                     
         }
+​
+        // Dispatch actual methods
+        public Object call(String action, Map<String, Object> args) {
+            switch on action {
+            when 'handleResponse' {
+                this.handleResponse((functions.FunctionInvocation)args.get('result'));
+                return null;
+            }
+            when else {
+                throw new ExtensionMalformedCallException('Method not implemented');
+            }
+            }
+        }
+        public class ExtensionMalformedCallException extends Exception {}
+​
     }
