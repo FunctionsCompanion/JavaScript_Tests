@@ -3,7 +3,7 @@ schema-version = "0.2"
 
 [com.salesforce]
 schema-version = "0.1"
-id = "sentiment10"
+id = "sentiment4"
 description = "A sentiment analysis model implemented as a Salesforce Function"
 type = "function"
 salesforce-api-version = "54.0"
