@@ -1,10 +1,10 @@
 String Jsonpayload = '{"sentimentsmessage": "This invoke is queued"}';
 
 //Run the  function sync...
-FCFunction.getAndInvoke('JavaScript_Tests.sentiment', Jsonpayload);
-//FCFunction.getAndInvoke('JavaScript_Tests.sentiment', Jsonpayload);
-//FCFunction.getAndInvoke('JavaScript_Tests.sentiment', Jsonpayload);
+FCFunction.getAndInvoke('SentimentFunctions_1-5.sentiment', Jsonpayload);
+//FCFunction.getAndInvoke('SentimentFunctions_1-5.sentiment', Jsonpayload);
+//FCFunction.getAndInvoke('SentimentFunctions_1-5.sentiment', Jsonpayload);
 //Run thge functions async....
-//FCFunction.getAndInvoke('JavaScript_Tests.sentiment', Jsonpayload1, 'FCCallback' );
+//FCFunction.getAndInvoke('SentimentFunctions_1-5.sentiment', Jsonpayload1, 'FCCallback' );
 
 
