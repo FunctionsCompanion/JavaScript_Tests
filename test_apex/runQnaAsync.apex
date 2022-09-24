@@ -1,4 +1,4 @@
 String Jsonpayload = '{"passage": "Google LLC is an American multinational Corporation.", "question": "Is Google an American company?"}';
-FCFunction.getAndInvoke('SentimentFunctions_1_5.qna', Jsonpayload, 'FCCallback' );
+FCFunction.getAndInvoke('Sent_1.qna', Jsonpayload, 'FCCallback' );
 
 
