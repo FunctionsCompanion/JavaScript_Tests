@@ -5,7 +5,7 @@
       "default": true
     }
   ],
-  "name": "SentimentFunctions_1-5",
+  "name": "SentimentFunctions_1_5",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "54.0"
