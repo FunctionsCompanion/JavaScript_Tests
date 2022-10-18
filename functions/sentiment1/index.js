@@ -13,7 +13,7 @@
 
 import * as tf from '@tensorflow/tfjs';
 import * as loader from './loader.js';
-import * as fc from 'sf-fc-logger';
+import { fc } from 'sf-fc-logger';
 import { OOV_INDEX, padSequences } from './sequence_utils.js';
 
 const HOSTED_URLS = {
@@ -26,9 +26,9 @@ const LOCAL_URLS = {
     metadata: './resources/metadata.json'
 };
 
-export default async function (event, context, logger) {
-    try {
-        fc.init(event, context, logger);
+export default await fc(async (event, ctx, logger) => {
+    /*try {
+        fc.init(event, context, logger);*/
 
 
         // Add some delay to shift the trace...
@@ -116,11 +116,11 @@ export default async function (event, context, logger) {
         }
 
         var result = await setupSentiment();
-        fc.fc_log_invocation_data();
+        // fc.fc_log_invocation_data();
 
         return result;
-    } catch (e) {
+    /*} catch (e) {
         //console.warn(e.message)
         fc.fc_log_invocation_data(e);
-    }
-}
+    }*/
+});
