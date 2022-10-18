@@ -13,11 +13,11 @@
 
 import * as qna from '@tensorflow-models/qna';
 import '@tensorflow/tfjs-node';
-import * as fc from 'sf-fc-logger';
+import { fc } from 'sf-fc-logger';
 
-export default async function (event, context, logger) {
-        try {
-                fc.init(event, context, logger);
+export default await fc(async (event, ctx, logger) => {
+        /*try {
+                fc.init(event, context, logger);*/
                 const { passage, question } = event.data;
                 // Load the model.
                 const model = await qna.load();
@@ -28,10 +28,10 @@ export default async function (event, context, logger) {
                 console.log('Answers: ');
                 console.log(answers);
 
-                fc.fc_log_invocation_data();
+                // fc.fc_log_invocation_data();
                 return answers;
-        }
+        /*}
         catch (e) {
                 fc.fc_log_invocation_data(e);
-        }
-}
+        }*/
+});
