@@ -26,7 +26,7 @@ const LOCAL_URLS = {
     metadata: './resources/metadata.json'
 };
 
-export default await fc(async (event, ctx, logger) => {
+export default await fc(async (event, context, logger) => {
     /*try {
         fc.init(event, context, logger);*/
 
