@@ -5,7 +5,7 @@
       "default": true
     }
   ],
-  "name": "Sent_2",
+  "name": "Throttle",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "54.0"
