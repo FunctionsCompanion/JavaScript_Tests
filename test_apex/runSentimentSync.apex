@@ -9,14 +9,14 @@
 //String Jsonpayload5 = '{"sentimentsmessage": "The fifth invoke is queued"}';
 //FCFunction.getAndInvoke('Sent_1.sentiment5', Jsonpayload5);
 String Jsonpayload6 = '{"sentimentsmessage": "The first invoke is queued"}';
-FCFunction.getAndInvoke('Sent_2.sentiment1', Jsonpayload6);
+FCFunction.getAndInvoke('Throttle.sentiment1', Jsonpayload6);
 String Jsonpayload7 = '{"sentimentsmessage": "The second invoke is queued"}';
-FCFunction.getAndInvoke('Sent_2.sentiment2', Jsonpayload7);
+FCFunction.getAndInvoke('Throttle.sentiment2', Jsonpayload7);
 String Jsonpayload8 = '{"sentimentsmessage": "The third invoke is queued"}';
-FCFunction.getAndInvoke('Sent_2.sentiment3', Jsonpayload8);
+FCFunction.getAndInvoke('Throttle.sentiment3', Jsonpayload8);
 String Jsonpayload9 = '{"sentimentsmessage": "The forth invoke is queued"}';
-FCFunction.getAndInvoke('Sent_2.sentiment4', Jsonpayload9);
+FCFunction.getAndInvoke('Throttle.sentiment4', Jsonpayload9);
 String Jsonpayload10 = '{"sentimentsmessage": "The fifth invoke is queued"}';
-FCFunction.getAndInvoke('Sent_2.sentiment5', Jsonpayload10);
+FCFunction.getAndInvoke('Throttle.sentiment5', Jsonpayload10);
 
 
