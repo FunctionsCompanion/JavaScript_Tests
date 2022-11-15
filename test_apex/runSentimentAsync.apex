@@ -1,8 +1,8 @@
 String Jsonpayload1 = '{"sentimentsmessage": "This invoke is queued"}';
 
 //Run the  function sync...
-//FCFunction.getAndInvoke('JavaScript_Tests.sentiment', Jsonpayload1);
+//FCFunction.getAndQueue('JavaScript_Tests.sentiment', Jsonpayload1);
 //Run thge functions async....
-FCFunction.getAndInvoke('JavaScript_Tests.sentiment', Jsonpayload1, 'FCCallbackWaitLong' );
+FCFunction.getAndQueue('JavaScript_Tests.sentiment', Jsonpayload1, 'FCCallbackWaitLong' );
 
 
